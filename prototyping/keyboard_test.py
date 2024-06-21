@@ -1,12 +1,12 @@
-import keyboard as kb
 import time
+import keyboard as kb
 
 # Test of the keyboard module - wait for space key to be pressed, then wait
 # three more seconds for the round to start, and type the provided snippet.
 # At the minute, the snippet is typed into prompt.txt ahead of time.
 
 # Store the snippet as a string
-sourceFile = open("prototyping/prompt.txt", "rt")
+sourceFile = open("prototyping/prompt.txt", "rt", encoding="utf-8")
 text = sourceFile.read()
 
 # Wait for the space key
