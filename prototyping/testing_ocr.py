@@ -11,6 +11,10 @@ PATH = 'prototyping/prompt.png'
 
 # Convert processed image to words
 outtype = pt.image_to_string(PATH)
-
 # Process a bit of the string
-print(outtype.replace('\n', ' ').replace('|',' I ').replace('  ', ' '))
+outtype = outtype.replace('\n', ' ').replace('|',' I ').replace('  ', ' ').strip()
+
+# Write string to file to be written
+sourceFile = open("prototyping/prompt.txt", "wt", encoding="utf-8")
+sourceFile.write(outtype)
+sourceFile.close()
