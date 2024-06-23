@@ -3,3 +3,6 @@ prompt.txt
 
 # Text file containing the typer.io screen
 prompt.png
+
+# Miscelaneous created images
+*.png
